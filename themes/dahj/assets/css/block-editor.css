@@ -1,0 +1,44 @@
+.wp-block-quote{
+    color: tomato;
+}
+
+.is-style-large{
+        color: aqua;
+}
+
+.wp-block-heading{
+    color: red;
+    text-align: start;
+}
+
+.wp-block-paragraph{
+    color: blue;
+    justify-content: center;
+    align-content: center;
+}
+
+.wp-block-list{
+    order:initial;
+    order: reverse;
+    text-anchor: middle;
+    color: chocolate;
+}
+
+.wp-block-code{
+    background-color: antiquewhite;
+    padding: 2rem;
+    margin-top: 1rem;
+    word-spacing: 1rem;
+}
+
+.wp-block-preformatted{
+    font-size: 2rem;
+    font-family: fantasy;
+    color: blueviolet;
+}
+
+.wp-block-pullquote{
+    color: aquamarine;
+    text-align: start;
+    text-justify: distribute-all-lines;
+}

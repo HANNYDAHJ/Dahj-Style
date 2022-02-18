@@ -15,3 +15,11 @@ function dahj_enqueue_block_editor_assets() {
     );
 }
 add_action( 'enqueue_block_editor_assets', 'dahj_enqueue_block_editor_assets' );
+
+
+function dahj_enqueue_block_assets() {
+    wp_enqueue_style( 'block-editor-style',
+    get_template_directory_uri() . '/assets/css/block-editor.css'
+);
+}
+add_action( 'enqueue_block_assets', 'dahj_enqueue_block_assets' );
