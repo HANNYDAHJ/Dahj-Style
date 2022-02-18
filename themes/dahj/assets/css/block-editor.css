@@ -12,7 +12,7 @@
 }
 
 .wp-block-paragraph{
-    color: blue;
+    color:chocolate;
     justify-content: center;
     align-content: center;
 }
@@ -41,4 +41,86 @@
     color: aquamarine;
     text-align: start;
     text-justify: distribute-all-lines;
+}
+
+.wp-block-table{
+    color: brown;
+    padding: 2rem;
+    text-justify: inter-word;
+}
+.wp-block-verse{
+    color:chartreuse;
+    align-content: center;
+    font-size: 3rem;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+
+.wp-block-image{
+    text-anchor: start;
+    size: 2rem;
+    border-radius: 50%;
+}
+
+.wp-block-cover__inner-container .wp-block-paragraph{
+color: brown;
+}
+
+
+.wp-block-file{
+text-align: center;
+text-decoration: solid;
+text-decoration: wavy;
+}
+
+.wp-block-file__button{
+color: aqua;
+white-space: nowrap;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border: lawngreen;
+}
+
+.wp-block-media_text{
+    align-content: stretch;
+    background-color: wheat;
+}
+
+.wp-block-video{
+    border-radius:20%;
+    
+}
+
+
+.wp-block-button__link{
+    color: azure;
+    background-color: red;
+}
+
+.wp-block-column{
+    background-color: brown;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+
+.wp-block-row{
+    background-color: aqua;
+    font-family: cursive;
+    font-size: 3rem;
+    font-style: bold;
+}
+
+.wp-block-more{
+    font-size: xx-large;
+    font-family: monospace;
+    text-transform: uppercase;
+    background-color: aqua;
+}
+
+.wp-block-next-page{
+    background-color: brown;
+}
+
+.wp-block-spacer{
+    background-color: aquamarine;
 }
