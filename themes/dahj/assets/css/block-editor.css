@@ -1,18 +1,19 @@
 .wp-block-quote{
-    color: tomato;
+    color: #D01010;
+    font-family: Montserrat;
 }
 
 .is-style-large{
-        color: aqua;
+        color: ;
 }
 
 .wp-block-heading{
-    color: red;
+    color: #D01010;
     text-align: start;
 }
 
 .wp-block-paragraph{
-    color:chocolate;
+    color:#D01010;
     justify-content: center;
     align-content: center;
 }
@@ -21,11 +22,11 @@
     order:initial;
     order: reverse;
     text-anchor: middle;
-    color: chocolate;
+    color: #D01010;
 }
 
 .wp-block-code{
-    background-color: antiquewhite;
+    background-color: #D01010;
     padding: 2rem;
     margin-top: 1rem;
     word-spacing: 1rem;
@@ -34,22 +35,23 @@
 .wp-block-preformatted{
     font-size: 2rem;
     font-family: fantasy;
-    color: blueviolet;
+    color: #D01010;
 }
 
 .wp-block-pullquote{
-    color: aquamarine;
+    color: #D01010;
     text-align: start;
     text-justify: distribute-all-lines;
 }
 
 .wp-block-table{
-    color: brown;
+    color:white;
+    background-color: #D01010;
     padding: 2rem;
     text-justify: inter-word;
 }
 .wp-block-verse{
-    color:chartreuse;
+    color:#D01010;
     align-content: center;
     font-size: 3rem;
     font-family: cursive;
@@ -63,7 +65,8 @@
 }
 
 .wp-block-cover__inner-container .wp-block-paragraph{
-color: brown;
+color: #D01010;
+background-color: aliceblue;
 }
 
 
@@ -74,10 +77,9 @@ text-decoration: wavy;
 }
 
 .wp-block-file__button{
-color: aqua;
+color:#D01010;
 white-space: nowrap;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-border: lawngreen;
 }
 
 .wp-block-media_text{
@@ -93,18 +95,18 @@ border: lawngreen;
 
 .wp-block-button__link{
     color: azure;
-    background-color: red;
+    background-color:#D01010;
 }
 
 .wp-block-column{
-    background-color: brown;
+    background-color: #D01010;
     color: aliceblue;
     align-items: center;
     text-align: center;
 }
 
 .wp-block-row{
-    background-color: aqua;
+    background-color: #D01010;
     font-family: cursive;
     font-size: 3rem;
     font-style: bold;
@@ -114,13 +116,28 @@ border: lawngreen;
     font-size: xx-large;
     font-family: monospace;
     text-transform: uppercase;
-    background-color: aqua;
+    background-color:#D01010;
 }
 
 .wp-block-next-page{
-    background-color: brown;
+    background-color: #D01010;
 }
 
 .wp-block-spacer{
-    background-color: aquamarine;
+    background-color: #D01010;
+}
+
+.wp-block-archieve{
+    color: #D01010;
+    font-family:Montserrat;
+}
+
+.wp-block-calendar{
+    background-color: #D01010;
+    font-family:Montserrat;
+    color: aliceblue;
+}
+
+.wp-block-html{
+    color: #D01010;
 }
