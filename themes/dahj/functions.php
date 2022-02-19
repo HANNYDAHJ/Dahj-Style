@@ -128,8 +128,34 @@ add_action( 'widgets_init', 'dahj_widgets_init' );
  * Enqueue scripts and styles.
  */
 function dahj_scripts() {
-	wp_enqueue_style( 'dahj-style', get_stylesheet_uri(), array(), DAHJ_VERSION );
+	wp_enqueue_style( 
+	'dahj-style',
+	get_stylesheet_uri(),
+	array(),
+	DAHJ_VERSION
+	);
 
+	wp_enqueue_style( 
+	'foundation-style',
+	get_template_directory_uri() . '/assets/css/vendor/foundation.min.css',
+	array(),
+	"6.7.4"
+	);
+    wp_enqueue_script( 
+	'foundation-script',
+	get_template_directory_uri() . '/assets/js/vendor/foundation.min.js',
+	array('jquery','what-input-script'),
+	"6.7.4",
+	true
+	);
+
+	wp_enqueue_script( 
+		'what-input-script',
+		get_template_directory_uri() . '/assets/js/vendor/what-input.js',
+		array('jquery'),
+		"5.2.10",
+		true
+		);
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -159,6 +185,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Block Editor additions.
  */
 require get_template_directory() . '/inc/block-editor.php';
-
-
-
