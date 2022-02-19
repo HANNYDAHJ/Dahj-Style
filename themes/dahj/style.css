@@ -23,3 +23,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 
+.logo{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.top-bar{
+}
+
