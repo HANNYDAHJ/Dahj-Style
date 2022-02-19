@@ -48,7 +48,7 @@
 		<nav id="site-navigation" class="main-navigation">
 
 
-     <img src="../assets/image/logo.jpg">
+        <img src="../assets/image/logo.jpg">
 
 
 
