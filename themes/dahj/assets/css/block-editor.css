@@ -146,3 +146,13 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #D01010;
     background-color: #D01010;
 }
+
+.wp-block-site-logo{
+    border-radius: 50%;
+}
+
+.wp-block-site-title{
+    color: #D01010;
+    font-family:Montserrat;
+}
+
