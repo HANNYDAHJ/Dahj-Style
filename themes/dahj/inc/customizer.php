@@ -31,6 +31,7 @@ function dahj_customize_register( $wp_customize ) {
 			)
 		);
 	}
+	$wp_customize->add_section()
 }
 add_action( 'customize_register', 'dahj_customize_register' );
 
