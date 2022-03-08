@@ -50,6 +50,9 @@ function dahj_setup() {
 	register_nav_menus(
 		array(
 			'menu-primary' => esc_html__( 'Primary', 'dahj' ),
+			'menu-secondary' => esc_html__( 'Secondary', 'dahj' ),
+			'menu-footer' => esc_html__( 'Footer', 'dahj' ),
+			'menu-social' => esc_html__( 'Social', 'dahj' ),
 		)
 	);
 

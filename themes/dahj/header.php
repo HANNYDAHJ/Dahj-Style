@@ -90,6 +90,15 @@
 				)
 			);
         }
+
+
+        if (has_nav_menu( 'menu-social' )){
+			wp_nav_menu(
+				array(
+					'theme_location' => 'Social-menu',
+				)
+			);
+        }
 			?>
             </nav><!-- #site-navigation -->
         </header><!-- #masthead -->
