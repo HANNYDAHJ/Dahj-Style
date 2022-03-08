@@ -51,7 +51,7 @@
             </div><!-- .site-branding -->
 
             <nav id="site-navigation" class="main-navigation">
-
+<!-- 
                 <div class="top-bar">
                     <div class="top-bar-left">
                         <ul class="dropdown menu" data-dropdown-menu>
@@ -67,7 +67,7 @@
                             <li><button type="button" class="button">Search</button></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
 
 
@@ -81,12 +81,15 @@
                 <button class="menu-toggle" aria-controls="primary-menu"
                     aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dahj' ); ?></button>
                 <?php
+
+                if (has_nav_menu( 'menu-primary' )){
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-primary',
 					'menu_id'        => 'primary-menu',
 				)
 			);
+        }
 			?>
             </nav><!-- #site-navigation -->
         </header><!-- #masthead -->
