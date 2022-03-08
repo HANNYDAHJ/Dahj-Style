@@ -171,3 +171,18 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 100%;
 }
 
+.entry-header{
+    text-align: center;
+}
+
+#wsf-1-field-19{
+    color:aliceblue;
+    background-color: #D01010;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+
