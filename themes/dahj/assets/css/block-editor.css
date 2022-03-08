@@ -160,7 +160,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 .entry-content > *{
     max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .alignwide{
