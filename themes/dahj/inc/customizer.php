@@ -31,7 +31,10 @@ function dahj_customize_register( $wp_customize ) {
 			)
 		);
 	}
-	$wp_customize->add_section()
+// 	$wp_customize->add_section('dahj_social_media', array(
+// 		'title'=> esc_html__('Social Media', 'dahj'  )
+// 	)
+// 
 }
 add_action( 'customize_register', 'dahj_customize_register' );
 
