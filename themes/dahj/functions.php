@@ -149,6 +149,11 @@ function dahj_scripts() {
 	true
 	);
 
+	wp_enqueue_style( 
+		'woocommerce-style',
+		get_template_directory_uri() . '/assets/css/vendor/woocommerce.css',
+		);
+
 	wp_enqueue_script( 
 		'what-input-script',
 		get_template_directory_uri() . '/assets/js/vendor/what-input.js',
