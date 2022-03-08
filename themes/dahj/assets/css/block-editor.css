@@ -1,10 +1,9 @@
+
+
+
 .wp-block-quote{
     color: #D01010;
     font-family: Montserrat;
-}
-
-.is-style-large{
-        color: ;
 }
 
 .wp-block-heading{
@@ -185,4 +184,28 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
+.custom-logo{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
 
+#site-navigation{
+    float: right;
+    color: #D01010;
+}
+
+a{
+    color: #D01010;
+    background-color: #D01010;
+}
+.menu-primary-menu-container{
+    color: #D01010;
+}
+
+
+
+.entry-title{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -27,59 +27,38 @@
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'dahj' ); ?></a>
 
         <header id="masthead" class="site-header">
-            <!-- <div class="site-branding"> -->
+            <div class="site-branding">
                 <?php
-			// the_custom_logo();
+
+                if (! empty (has_custom_logo())){
+			the_custom_logo();
+                } else{
 			if ( is_front_page() && is_home() ) :
 				?>
-                <!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" -->
-                        <!-- rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" <!--
+                        rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
                 <?php
 			else :
 				?>
-                <!-- <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" -->
-                        <!-- rel="home"><?php bloginfo( 'name' ); ?></a></p> -->
+                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" <!--
+                        rel="home"><?php bloginfo( 'name' ); ?></a></p> -->
                 <?php
 			endif;
 			$dahj_description = get_bloginfo( 'description', 'display' );
 			if ( $dahj_description || is_customize_preview() ) :
 				?>
-                <!-- <p class="site-description"> -->
+                <p class="site-description">
                     <?php echo $dahj_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
                 </p>
-                <?php endif; ?>
+                <?php endif;
+                }
+                ?>
             </div><!-- .site-branding -->
 
             <nav id="site-navigation" class="main-navigation">
-<!-- 
-                <div class="top-bar">
-                    <div class="top-bar-left">
-                        <ul class="dropdown menu" data-dropdown-menu>
-                            <li class="menu-text"><img class="logo" src="http://dahj.local/wp-content/themes/dahj/assets/image/logo.jpg"></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="top-bar-right">
-                        <ul class="menu">
-                            <li><input type="search" placeholder="Search"></li>
-                            <li><button type="button" class="button">Search</button></li>
-                        </ul>
-                    </div>
-                </div> -->
-
-
-
-
-
-
-
-
-
-
-                <button class="menu-toggle" aria-controls="primary-menu"
-                    aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dahj' ); ?></button>
+        
+                <!-- <button class="menu-toggle" aria-controls="primary-menu"
+                    aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dahj' ); ?></button> -->
                 <?php
 
                 if (has_nav_menu( 'menu-primary' )){
