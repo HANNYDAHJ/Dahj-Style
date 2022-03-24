@@ -198,3 +198,9 @@ require get_template_directory() . '/inc/block-editor.php';
  * Woo Commerce additions.
  */
 require get_template_directory() . '/inc/woocommerce.php';
+
+
+/**
+ * Custom Post Types additions.
+ */
+require get_template_directory() . '/inc/post-types.php';
