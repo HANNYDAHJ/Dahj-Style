@@ -1,12 +1,10 @@
 <?php
-namespace Automattic\WooCommerce\Blocks\StoreApi\Schemas\V1;
+namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 
-use Automattic\WooCommerce\Blocks\StoreApi\Exceptions\RouteException;
+use Automattic\WooCommerce\StoreApi\Exceptions\RouteException;
 
 /**
  * Class CartExtensionsSchema
- *
- * @internal This API is used internally by Blocks--it is still in flux and may be subject to revisions.
  */
 class CartExtensionsSchema extends AbstractSchema {
 	/**
@@ -43,8 +41,12 @@ class CartExtensionsSchema extends AbstractSchema {
 	public function get_item_response( $request = null ) {
 		try {
 			$callback = $this->extend->get_update_callback( $request['namespace'] );
-		} catch ( RouteException $e ) {
-			throw $e;
+		} catch ( \Exception $e ) {
+			throw new RouteException(
+				'woocommerce_rest_cart_extensions_error',
+				$e->getMessage(),
+				400
+			);
 		}
 		if ( is_callable( $callback ) ) {
 			$callback( $request['data'] );

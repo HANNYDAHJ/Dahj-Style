@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    '7635ac0ea22cbb41e04480349a48b4aa' => $baseDir . '/src/deprecated.php',
+    'fcd5d7d87e03ff4f5b5a66c2b8968671' => $baseDir . '/src/StoreApi/deprecated.php',
+    'd0f16a186498c2ba04f1d0064fecf9cf' => $baseDir . '/src/StoreApi/functions.php',
 );
