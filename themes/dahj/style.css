@@ -42,3 +42,6 @@ height: 300px;
 }
 
 
+.wp-block-button__link:active, .wp-block-button__link:focus, .wp-block-button__link:hover, .wp-block-button__link:visited{
+    background-color: #D01010;
+}

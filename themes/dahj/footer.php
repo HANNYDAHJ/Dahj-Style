@@ -11,7 +11,16 @@
 
 ?>
 
+<!-- added site footer page number -->
+
 	<footer id="colophon" class="site-footer">
+	<?php wp_reset_query();
+		if ( is_page( '2' ) ) {
+		echo 'This is page 2!';
+		}
+?>
+
+<!-- added wp_query for archieve -->
 
 	<?php
 $recipe_args = array(
@@ -25,6 +34,7 @@ $recipe_query = new WP_Query($recipe_args);
 if ($recipe_query->have_posts()){
 
 	?>
+	<!-- added styling in archieve with foundations -->
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x grid-margin-y">
 		<?php
@@ -51,7 +61,7 @@ if ($recipe_query->have_posts()){
 		<div class="site-info">
 				<?php
 				/* translators: 1: Copyright, 2: Theme name. */
-				printf( esc_html__('Copyright %1$s by %2$s.', 'dahj'), '2022', '<a href=".home_url.">Dahj Style</a>' );
+				printf( esc_html__('Copyright %1$s by %2$s.', 'dahj'), '2022', '<a href="shop">Dahj Style</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
