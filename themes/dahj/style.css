@@ -41,13 +41,13 @@ align-content: center;
 height: 300px;
 }
 
-
+/* button add to cart */
 .wp-block-button__link:active, .wp-block-button__link:focus, .wp-block-button__link:hover, .wp-block-button__link:visited{
     background-color: #D01010;
 }
 
 
-/*  */
+/* woocommerce page buttons */
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
     background-color: #D01010;
 }
@@ -55,5 +55,16 @@ height: 300px;
     background-color: red;
     border-radius: 50%;
     width: 300px;
+}
 
+/* menu slection button */
+.menu a, .menu button, .menu input, .menu select{
+    color: #D01010;
+
+}
+
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
+    background-color: #D01010;
+    color: aliceblue;
+    border-radius: 50%;
 }
