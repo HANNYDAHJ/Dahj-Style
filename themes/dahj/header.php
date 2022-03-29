@@ -35,12 +35,12 @@
                 } else{
 			if ( is_front_page() && is_home() ) :
 				?>
-                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" <!--
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" 
                         rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
                 <?php
 			else :
 				?>
-                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" <!--
+                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" 
                         rel="home"><?php bloginfo( 'name' ); ?></a></p> -->
                 <?php
 			endif;
@@ -57,8 +57,8 @@
 
             <nav id="site-navigation" class="main-navigation">
         
-                <button class="menu-toggle" aria-controls="primary-menu"
-                    aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dahj' ); ?></button>
+                <!-- <button class="menu-toggle" aria-controls="primary-menu" -->
+                    <!-- aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dahj' ); ?></button> -->
                 <?php
 
                 if (has_nav_menu( 'menu-primary' )){
