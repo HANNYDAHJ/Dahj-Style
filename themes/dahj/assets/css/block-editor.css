@@ -1,6 +1,12 @@
 
 
+/*
+*block code for every single blocks in wordpress 
+ */
 
+/*
+ text block code
+  */
 .wp-block-quote{
     color: #D01010;
     font-family: Montserrat;
@@ -57,6 +63,8 @@
     text-transform: capitalize;
 }
 
+
+/* Media block code */
 .wp-block-image{
     text-anchor: start;
     size: 2rem;
@@ -91,6 +99,9 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
+/* 
+design block code
+ */
 
 .wp-block-button__link{
     color: azure;
@@ -118,13 +129,9 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
-.wp-block-next-page{
-    
-}
-
-.wp-block-spacer{
-    
-}
+/* 
+Widgets block codes
+ */
 
 .wp-block-archieve{
     color: #D01010;
@@ -153,7 +160,9 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #D01010;
     font-family:Montserrat;
 }
-
+/* 
+Theme block code
+ */
 
 
 .entry-content > *{
