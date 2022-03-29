@@ -15,6 +15,11 @@
 		if (!is_singular ('product')){
 		if (is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
+			if (get_the_title( )){
+				?>
+				<h1><?php echo get_the_title( );?></h1>
+				<?php
+			}
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
