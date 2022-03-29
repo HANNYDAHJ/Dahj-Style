@@ -24,69 +24,75 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <div id="page" class="site">
+        <!-- skip link  -->
+
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'dahj' ); ?></a>
 
         <header id="masthead" class="site-header">
             <div class="site-branding">
                 <?php
-
-                if (! empty (has_custom_logo())){
-			the_custom_logo();
-                } else{
-			if ( is_front_page() && is_home() ) :
-				?>
-                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" 
+//* if logo is empty, will show site branding.
+if (! empty (has_custom_logo())){
+the_custom_logo();
+} else{
+if ( is_front_page() && is_home() ) :
+?>
+                <!-- site title display -->
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
                         rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
                 <?php
-			else :
-				?>
-                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" 
+else :
+?>
+                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
                         rel="home"><?php bloginfo( 'name' ); ?></a></p> -->
                 <?php
-			endif;
-			$dahj_description = get_bloginfo( 'description', 'display' );
-			if ( $dahj_description || is_customize_preview() ) :
-				?>
+endif;
+// get description if it displays home
+$dahj_description = get_bloginfo( 'description', 'display' );
+if ( $dahj_description || is_customize_preview() ) :
+?>
                 <p class="site-description">
                     <?php echo $dahj_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
                 </p>
                 <?php endif;
-                }
-                ?>
+}
+?>
             </div><!-- .site-branding -->
 
             <nav id="site-navigation" class="main-navigation">
-        
+
                 <!-- <button class="menu-toggle" aria-controls="primary-menu" -->
-                    <!-- aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dahj' ); ?></button> -->
+                <!-- aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dahj' ); ?></button> -->
                 <?php
 
-                if (has_nav_menu( 'menu-primary' )){
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-primary',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-        }
+if (has_nav_menu( 'menu-primary' )){
+wp_nav_menu(
+array(
+'theme_location' => 'menu-primary',
+'menu_id'        => 'primary-menu',
+)
+);
+}
+// menu social is a secondary menu if needed
 
+if (has_nav_menu( 'menu-social' )){
+wp_nav_menu(
+array(
+'theme_location' => 'Social-menu',
+)
+);
+}
+?>
 
-        if (has_nav_menu( 'menu-social' )){
-			wp_nav_menu(
-				array(
-					'theme_location' => 'Social-menu',
-				)
-			);
-        }
-			?>
-            <?php if ( is_home() || is_single() ) {
- 
- the_content();
+                <!-- if it is the home or single page will show content else the excerpt -->
+                <?php if ( is_home() || is_single() ) {
+
+the_content();
 
 }
 else {
 
- the_excerpt();
+the_excerpt();
 
 }
 ?>

@@ -35,6 +35,10 @@ footer{
     color: aliceblue;
 }
 
-
+/* post image align */
+.wp-post-image{
+align-content: center;
+height: 300px;
+}
 
 
