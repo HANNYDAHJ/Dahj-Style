@@ -22,13 +22,13 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-
+/* logo */
 .logo{
     border-radius: 50%;
     height: 200px;
     width: 200px;
 }
-
+/* footer styling */
 footer{
     text-align: center;
     background-color: #D01010;
