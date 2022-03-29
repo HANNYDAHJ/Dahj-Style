@@ -79,5 +79,16 @@
 			);
         }
 			?>
+            <?php if ( is_home() || is_single() ) {
+ 
+ the_content();
+
+}
+else {
+
+ the_excerpt();
+
+}
+?>
             </nav><!-- #site-navigation -->
         </header><!-- #masthead -->

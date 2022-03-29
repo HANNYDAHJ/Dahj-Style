@@ -36,8 +36,7 @@ if ($recipe_query->have_posts()){
 		the_post_thumbnail();
 		the_title( '<h3>','</h3>');
 		the_excerpt(  );
-		the_author_posts_link(  );
-		the_permalink(  );
+		the_permalink();
 		?>
 		</div>
 		<?php
