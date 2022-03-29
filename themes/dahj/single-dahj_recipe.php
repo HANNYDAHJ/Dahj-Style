@@ -36,6 +36,8 @@ echo 'Single recipe template';
 		endwhile; // End of the loop.
 		?>
 
+		
+
 	</main><!-- #main -->
 
 <?php
